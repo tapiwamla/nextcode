@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Client from '../components/Client';
 import Editor from '../components/Editor';
 import { initSocket } from '../socket';
-import ACTIONS from '../actions/Actions';
+import ACTIONS from '../user-actions/Actions';
 import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
