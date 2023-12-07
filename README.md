@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This innovative project is dedicated to the development of a lightweight, standalone application designed to enhance the collaborative coding experience for software development teams. If you've ever faced challenges with delayed synchronization, lack of real-time collaboration features, or resource-heavy dependencies in existing tools, this tool aims to provide a solution. It was developed by [Tapiwanashe Mlambo](https://github.com/tapiwamla) as his mid-term project for his undergraduate degree.
+This innovative project is dedicated to the development of a lightweight, standalone application designed to enhance the collaborative coding experience for software development teams. If you've ever faced challenges with delayed synchronization, lack of real-time collaboration features, or resource-heavy dependencies in existing tools, this tool aims to provide a solution. It was developed by [Tapiwanashe Mlambo](https://github.com/tapiwamla) as his mid-term project for his undergraduate degree, Bachelor of Science Applied Computer Technology.
 
 ## Key Features
 
@@ -19,7 +19,7 @@ This innovative project is dedicated to the development of a lightweight, standa
 - **Code Editor Component:** CodeMirror
 - **User Notification:** React-Toastify
 
-## Running locally
+## Running Locally
 
 
 ### Prerequisites
@@ -28,32 +28,27 @@ Ensure you have Node.js installed on your machine. If not, download and install 
 
 ### Steps
 
-1. **Clone the Repository:**
+1. **Clone the repository:**
    ```bash
    git clone https://github.com/tapiwamla/collabor8.git
    ```
 
-2. **Navigate to the Project Directory:**
+2. **Navigate to the project directory:**
    ```bash
    cd collabor8
    ```
 
-3. **Install Dependencies:**
+3. **Install dependencies:**
    ```bash
    npm install
    ```
 
-4. **Start the Backend Server:**
+4. **Start the full-stack application:**
    ```bash
-   npm run server:dev
+   npm run start:dev
    ```
 
-5. **Start the Application:**
-   ```bash
-   npm start
-   ```
-
-6. **Open the Application:**
-   - Once the server is running, open your web browser and go to [http://localhost:3000](http://localhost:3000).
+6. **Open the application:**
+   - Once the application is running, open your web browser and go to [http://localhost:3000](http://localhost:3000).
 
 Thank you for your interest in Collabor8! 🚀
