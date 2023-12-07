@@ -22,8 +22,9 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
+        "start:dev": "concurrently \"npm run server:dev\" \"npm start\"",
         "server:dev": "nodemon server.js",
-        "Server:prod": "node server.js",
+        "server:prod": "node server.js",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
@@ -46,6 +47,7 @@
         ]
     },
     "devDependencies": {
+        "concurrently": "^8.2.2",
         "jest": "^27.5.1",
         "nodemon": "^3.0.1"
     }
