@@ -8,7 +8,6 @@ This innovative project is dedicated to the development of a lightweight, standa
 
 - **Real-Time Collaboration:** Collaborate seamlessly with team members in real time, enhancing communication and productivity.
 - **Syntax Highlighting:** Improve code readability with instant syntax highlighting, making coding more efficient and error-resistant.
-- **Instant Error Detection:** Identify and rectify errors as you code, reducing debugging efforts and improving overall code quality.
 - **User-Friendly Interface:** A lightweight and standalone solution, ensuring a "plug-and-play" experience without the need for resource-heavy installations.
 
 ## Technologies Used

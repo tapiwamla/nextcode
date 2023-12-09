@@ -134,7 +134,7 @@ function EditorPage() {
             <img className="logo-image" src="/logo.png" alt="logo" />
           </div>
 
-          <h3>All Participants</h3>
+          <h3>ALL PARTICIPANTS</h3>
 
           <div className="client-list">
             {clients.map((client) => (
