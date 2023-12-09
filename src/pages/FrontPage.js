@@ -4,7 +4,7 @@ import { v4 as uuidV4 } from 'uuid';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
-function Home() {
+function FrontPage() {
 
     const navigate = useNavigate();
 
@@ -86,4 +86,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default FrontPage;

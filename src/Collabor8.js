@@ -1,7 +1,7 @@
 // Import all required modules
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import FrontPage from './pages/FrontPage';
 import EditorPage from './pages/EditorPage';
 import { Toaster } from 'react-hot-toast';
 
@@ -27,7 +27,7 @@ function Collabor8() {
 
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
+                    <Route path="/" element={<FrontPage />}></Route>
                     <Route path="/editor/:roomId" element={<EditorPage />}></Route>
                 </Routes>
             </BrowserRouter>
