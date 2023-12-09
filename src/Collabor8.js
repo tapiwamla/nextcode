@@ -8,7 +8,7 @@ import { Toaster } from 'react-hot-toast';
  * Renders the main application component.
  * @returns {JSX.Element} The rendered application component.
  */
-function App() {
+function Collabor8() {
     return (
         <>
             <div>
@@ -34,4 +34,4 @@ function App() {
     );
 }
 
-export default App;
+export default Collabor8;
