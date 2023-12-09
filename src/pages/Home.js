@@ -1,3 +1,4 @@
+// Import all required dependencies
 import React, { useState } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import toast from 'react-hot-toast';

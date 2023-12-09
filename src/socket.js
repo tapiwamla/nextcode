@@ -1,3 +1,4 @@
+// Import the socket.io-client library
 import { io } from "socket.io-client";
 
 /**
@@ -13,5 +14,6 @@ export const initSocket = async () => {
         transports: [ 'websocket' ]
     };
 
+    // Connect to the socket.io server
     return io(process.env.REACT_APP_BACKEND_URL, options);
 };

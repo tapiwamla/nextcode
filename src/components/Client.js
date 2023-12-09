@@ -1,3 +1,4 @@
+// Import all required modules.
 import React from 'react';
 import Avatar from 'react-avatar';
 
