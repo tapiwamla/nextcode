@@ -1,6 +1,12 @@
 import React from 'react';
 import Avatar from 'react-avatar';
 
+/**
+ * Render the client component.
+ *
+ * @param {string} username - The username of the client.
+ * @returns {JSX.Element} - The rendered client component.
+ */
 const Client = ({ username }) => {
     return (
         <>

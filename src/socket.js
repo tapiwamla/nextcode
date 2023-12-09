@@ -1,5 +1,10 @@
 import { io } from "socket.io-client";
 
+/**
+ * Initialize a socket connection to the backend server.
+ *
+ * @returns {object} - The socket connection object.
+ */
 export const initSocket = async () => {
     const options = {
         'force new connection': true,

@@ -6,6 +6,13 @@ import ACTIONS from '../user-actions/Actions';
 import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
+/**
+ * EditorPage component.
+ * 
+ * This component represents the page for the editor functionality.
+ * It handles socket connection, syncing code, managing participants,
+ * copying room ID, leaving the room, and downloading the editor content.
+ */
 function EditorPage() {
   const socketRef = useRef(null);
   const codeRef = useRef(null);

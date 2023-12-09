@@ -4,6 +4,10 @@ import Home from './pages/Home';
 import EditorPage from './pages/EditorPage';
 import { Toaster } from 'react-hot-toast';
 
+/**
+ * Renders the main application component.
+ * @returns {JSX.Element} The rendered application component.
+ */
 function App() {
     return (
         <>

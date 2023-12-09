@@ -9,7 +9,12 @@ const io = new Server(server);
 
 const userSocketMap = {};
 
-// To get all connected clients in a room.
+/**
+ * Retrieves all connected clients in a given room.
+ * 
+ * @param {string} roomId - The ID of the room.
+ * @returns {Array<Object>} - An array of objects containing the socket ID and username of each connected client.
+ */
 function getAllConnectedClients(roomId) {
     return Array.from(io.sockets.adapter.rooms.get(roomId) || []).map((socketId) => {
         return {
@@ -85,6 +90,7 @@ io.on('connection', (socket) => {
 
 // For listening to the server and serving static files.
 const PORT = process.env.PORT || 5000;
+
 server.listen(PORT, () =>
     console.log(`Listening on port ${PORT}`)
 );
