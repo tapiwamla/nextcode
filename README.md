@@ -1,4 +1,4 @@
-# Collabor8: A realtime code collaboration tool.
+# NeXTCode A realtime code collaboration tool.
 
 ## Introduction
 
