@@ -1,4 +1,4 @@
-# NeXTCode A realtime code collaboration tool.
+# NeXTCODE: A realtime code collaboration tool
 
 ## Introduction
 
@@ -29,12 +29,12 @@ Ensure you have Node.js installed on your machine. If not, download and install 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/tapiwamla/collabor8.git
+   git clone https://github.com/tapiwamla/nextcode.git
    ```
 
 2. **Navigate to the project directory:**
    ```bash
-   cd collabor8
+   cd nextcode
    ```
 
 3. **Install dependencies:**
@@ -50,4 +50,4 @@ Ensure you have Node.js installed on your machine. If not, download and install 
 6. **Open the application:**
    - Once the application is running, open your web browser and go to [http://localhost:3000](http://localhost:3000).
 
-Thank you for your interest in Collabor8! 🚀
+Thank you for your interest in NeXTCODE! 🚀
