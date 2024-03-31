@@ -2,19 +2,13 @@ const express = require('express');
 const app = express();
 const http = require('http');
 const { Server } = require('socket.io');
-const ACTIONS = require('./src/user-actions/Actions');
+const ACTIONS = require('./src/functions/actions');
 
 const server = http.createServer(app);
 const io = new Server(server);
 
 const userSocketMap = {};
 
-/**
- * Retrieves all connected clients in a given room.
- * 
- * @param {string} roomId - The ID of the room.
- * @returns {Array<Object>} - An array of objects containing the socket ID and username of each connected client.
- */
 function getAllConnectedClients(roomId) {
     return Array.from(io.sockets.adapter.rooms.get(roomId) || []).map((socketId) => {
         return {

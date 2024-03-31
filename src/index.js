@@ -1,15 +1,30 @@
-// Import all required modules
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import Collabor8 from './Collabor8';
+import { React, LandingPage, EditorPage, ReactDOM, BrowserRouter, Routes, Route, Toaster } from './imports';
+import './index.css'; 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <Collabor8 />
-);
+function Collabor8() {
+  return (
+    <>
+      <div>
+        <Toaster
+          position="top-right"
+          toastOptions={{
+            success: {
+              theme: {
+                primary: '#4aed88'
+              }
+            }
+          }} 
+        />
+      </div>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-// reportWebVitals();
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/editor/:roomId" element={<EditorPage />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+  );
+}
+
+ReactDOM.render(<Collabor8 />, document.getElementById('root'));

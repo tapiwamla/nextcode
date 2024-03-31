@@ -1,21 +1,5 @@
-// Import all required modules
-import React, { useEffect, useRef } from 'react';
-import CodeMirror from 'codemirror';
-import 'codemirror/lib/codemirror.css';
-import 'codemirror/theme/dracula.css';
-import 'codemirror/mode/javascript/javascript';
-import 'codemirror/addon/edit/closetag';
-import 'codemirror/addon/edit/closebrackets';
-import ACTIONS from '../user-actions/Actions';
+import { React, useEffect, useRef, CodeMirror, ACTIONS } from '../imports';
 
-/**
- * Editor component for real-time code editing.
- * @param {Object} props - The component props.
- * @param {Object} props.socketRef - The socket reference for real-time communication.
- * @param {string} props.roomId - The ID of the room where the code is being edited.
- * @param {Function} props.onCodeChange - The callback function to handle code changes.
- * @returns {JSX.Element} - The editor component.
- */
 function Editor({ socketRef, roomId, onCodeChange }) {
     const editorRef = useRef(null);
 

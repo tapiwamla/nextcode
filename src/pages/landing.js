@@ -1,10 +1,6 @@
-// Import all required dependencies
-import React, { useState } from 'react';
-import { v4 as uuidV4 } from 'uuid';
-import toast from 'react-hot-toast';
-import { useNavigate } from 'react-router-dom';
+import { React, toast, useNavigate, useState, uuidV4 } from '../imports';
 
-function FrontPage() {
+function LandingPage() {
 
     const navigate = useNavigate();
 
@@ -76,14 +72,8 @@ function FrontPage() {
                     </span>
                 </div>
             </div>
-
-
-            <footer>
-                <p><a href="https://github.com/tapiwamla" target='_blank' rel="noreferrer">tapiwamla</a> developed this</p>
-            </footer>
-
         </div>
     )
 }
 
-export default FrontPage;
+export default LandingPage;

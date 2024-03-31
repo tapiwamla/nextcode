@@ -1,19 +1,5 @@
-// Import all required modules
-import React, { useEffect, useRef, useState } from 'react';
-import Client from '../components/Client';
-import Editor from '../components/Editor';
-import { initSocket } from '../socket';
-import ACTIONS from '../user-actions/Actions';
-import { useLocation, useNavigate, Navigate, useParams } from 'react-router-dom';
-import toast from 'react-hot-toast';
+import { React, useEffect, useRef, useState, useLocation, useNavigate, Navigate, useParams, Client, Editor, initSocket, ACTIONS, toast } from '../imports';
 
-/**
- * EditorPage component.
- * 
- * This component represents the page for the editor functionality.
- * It handles socket connection, syncing code, managing participants,
- * copying room ID, leaving the room, and downloading the editor content.
- */
 function EditorPage() {
   const socketRef = useRef(null);
   const codeRef = useRef(null);
@@ -117,7 +103,7 @@ function EditorPage() {
 
     const anchor = document.createElement('a');
     anchor.href = URL.createObjectURL(blob);
-    anchor.download = 'my-file.js';
+    anchor.download = 'code.js';
     document.body.appendChild(anchor);
     anchor.click();
     document.body.removeChild(anchor);
