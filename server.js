@@ -83,8 +83,8 @@ io.on('connection', (socket) => {
 });
 
 // For listening to the server and serving static files.
-const PORT = process.env.PORT || 5000;
+const PORT_BACKEND = process.env.PORT_BACKEND || 5000;
 
-server.listen(PORT, () =>
-    console.log(`Listening on port ${PORT}`)
+server.listen(PORT_BACKEND, () =>
+    console.log(`Listening on port ${PORT_BACKEND}`)
 );
